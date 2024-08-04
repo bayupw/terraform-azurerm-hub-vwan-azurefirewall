@@ -10,7 +10,7 @@ Terraform module to deploy Azure Virtual WAN Secure Hub with Azure Firewall
 ```hcl
 module "securehub" {
   source  = "bayupw/hub-vwan-azurefirewall/azurerm"
-  version = "1.0.0"
+  version = "0.0.1"
 
   random_pet_suffix = true
   location          = "Australia East"
@@ -26,6 +26,7 @@ module "securehub" {
   firewall_dns_proxy          = true
   firewall_policy_name        = "policy-default-ae"
 }
+```
 
 ## Contributing
 
